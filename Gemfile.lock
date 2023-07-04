@@ -9,7 +9,7 @@ GEM
     concurrent-ruby (1.2.2)
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
-    fast-polylines (2.0.1)
+    fast-polylines (2.2.2)
     http-accept (1.7.0)
     http-cookie (1.0.5)
       domain_name (~> 0.5)
@@ -45,7 +45,7 @@ PLATFORMS
 
 DEPENDENCIES
   activesupport
-  fast-polylines (~> 2.0.0)
+  fast-polylines (~> 2.2.2)
   loc
   mapbox-sdk
   nokogiri

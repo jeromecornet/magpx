@@ -4,4 +4,4 @@ gem 'nokogiri'
 gem 'mapbox-sdk'
 gem 'activesupport'
 gem "loc"
-gem "fast-polylines", "~> 2.0.0"
+gem "fast-polylines", "~> 2.2.2"
