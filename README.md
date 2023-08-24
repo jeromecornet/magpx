@@ -14,9 +14,11 @@ run ```bundle install```
 Signup for mapbox and get an API token https://account.mapbox.com/
 The small limits of the free plan should be enough for personal usage.
 
-The first time, you will need to login
-run `ruby magpx.rb --login --username email@example.com --password 'your-password' --mapbox-token 'the-token-from-mapbox'`
-This will create a configuration file in ~/.magpx.yml that contains your userid, authentication token and mapbox token.
+You also need to know your login and password from Onelapfit.
+
+The first time, you will need to save your onelapfit configuration by running `ruby magpx.rb --login --username 'onelapfit-login' --password 'onelapfit-password' --mapbox-token 'mapbox-token'` (replace 'onelapfit-login' 'onelapfit-password' and 'mapbox-token' by their respective values)
+
+This will create a configuration file in ~/.magpx.yml that contains your Onelapfit userid, authentication token and mapbox token.
 
 After this, you can import GPX files using:
 `ruby magpx.rb -g path/to/your/file.gpx`
