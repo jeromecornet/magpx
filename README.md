@@ -26,4 +26,10 @@ After this, you can import GPX files using:
 This runs the GPX file through the mapbox route matching, splitting the route in smaller sections to remain within the API limits of only 25 points.
 Once the route is matched, it uploads the data in the way the onelapfit server expects (I think)
 
-Good luck
+
+You can find the route in the mobile app by going to the navigation screen, then looking at the history. The route should appear there.
+
+Good luck !
+
+
+ 
