@@ -65,7 +65,7 @@ module MagGPX
                            direction: 0,
                            turn_type: "直行"
                          }
-                       when "left", "sharp left"
+                       when "left"
                          {
                            direction: 1,
                            turn_type: "左转"
@@ -75,7 +75,7 @@ module MagGPX
                            direction: 2,
                            turn_type: "左前"
                          }
-                       when "right", "sharp right"
+                       when "right"
                          {
                            direction: 3,
                            turn_type: "右转"
@@ -84,6 +84,16 @@ module MagGPX
                          {
                            direction: 4,
                            turn_type: "右前"
+                         }
+                       when "sharp left"
+                         {
+                           direction: 6,
+                           turn_type: "左后"
+                         }
+                       when "sharp right"
+                         {
+                           direction: 7,
+                           turn_type: "右后"
                          }
                        else
                          puts "Unknown maneuver modifier: #{step["maneuver"]["modifier"]}"
