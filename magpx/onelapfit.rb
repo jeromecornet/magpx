@@ -95,6 +95,11 @@ module MagGPX
                            direction: 7,
                            turn_type: "右后"
                          }
+                       when "uturn"
+                         {
+                           direction: 8,
+                           turn_type: "右转"
+                         }
                        else
                          puts "Unknown maneuver modifier: #{step["maneuver"]["modifier"]}"
                        end
@@ -106,7 +111,7 @@ module MagGPX
                      else
                        puts "Unknown maneuver type: #{step["maneuver"]["type"]}"
                      end
-          navigation_steps << olstep.merge(maneuver)
+          navigation_steps << olstep.merge(maneuver) if maneuver.present?
         end
       end
 
